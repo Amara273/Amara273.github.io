@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>បាយវិទ្យាល័យ · Bay Vitealay</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#home" class="nav-logo">
+    <div class="nav-ball"><img src="images/special-bay.jpg" alt="Bay Vitealay Logo"></div>
+    <div class="nav-txt">
+      <span class="nav-km">បាយវិទ្យាល័យ</span>
+      <span class="nav-en">Bay Vitealay · Pursat</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Find Us</a></li>
+  </ul>
+  <button class="cart-btn" onclick="openCart()">
+    🛒 Order
+    <span class="cbadge" id="cbadge">0</span>
+  </button>
+</nav>
+
+<section id="home" class="hero">
+  <div class="hero-dia"></div>
+  <div class="hero-in">
+    <div>
+      <div class="h-eyebrow">🌅 Open 6:00 AM – 12:00 PM Daily</div>
+      <h1>បាយក្តៅៗ​ <br>កម្មង់ភ្លាម​ ញ្ញុាំភ្លាម
+        <!-- <span class="km">បាយឆ្ងាញ់ បានញ្ញុាំទាន់ចិត្ត</span> -->
+      </h1>
+      <p class="h-sub">កុម្ម៉ង់តាមទូរស័ព្ទ កំណត់ម៉ោងមកដល់ ចាប់ផ្ដើមញ៉ាំភ្លាមៗ! មិនបាច់តម្រង់ជួរ មិនបាច់រង់ចាំ មិនខកខានម៉ោងរៀន។</p>
+      <div class="h-hours">⏰ កុម្ម៉ង់ទុកមុន &nbsp;·&nbsp; រៀបចំទាន់ម៉ោង &nbsp;·&nbsp; មកដល់ភ្លាម ទទួលភ្លាម</div>
+      <div class="h-ctas">
+        <a href="#menu" class="btn-hp">🍚 Order Now</a>
+        <a href="#about" class="btn-ho">Our Story</a>
+      </div>
+    </div>
+    <div class="h-right">
+      <div class="h-bowl">
+        <img src="images/special-bay.jpg" alt="Coffee Cup" width="260" height="310" class="rounded-[20%]">
+      </div>
+      <div class="h-pills">
+        <div class="h-pill">ងាយស្រួល ទាន់ចិត្ត</div>
+        <div class="h-pill">តម្លៃចាប់ពី ៣,000 ៛</div>
+        <div class="h-pill">មិនបាច់រង់ចាំ</div>
+        <div class="h-pill">ក្រុង​​ ពោធិ័សាត់</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="how">
+  <div class="how-in">
+    <div class="hs"><span class="hsn">1</span>Browse menu</div>
+    <span class="ha">→</span>
+    <div class="hs"><span class="hsn">2</span>Pick your arrival time</div>
+    <span class="ha">→</span>
+    <div class="hs"><span class="hsn">3</span>Cash or scan QR</div>
+    <span class="ha">→</span>
+    <div class="hs"><span class="hsn">4</span>Food ready when you walk in 🍚</div>
+  </div>
+</div>
+
+<section id="menu" class="sec menu-sec">
+  <div class="sec-in">
+    <div class="sec-lbl">What We Serve</div>
+    <h2 class="sec-title">Breakfast Menu</h2>
+    <p class="sec-sub">Freshly cooked every morning from 6 AM. All prices in Cambodian Riel (៛).</p>
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('rice')"><img src="images/special-bay.jpg" alt="Rice" class="tab-icon"> បាយ</button>
+      <button class="tab" onclick="switchTab('noodle')">🍜បបរ</button>
+      <button class="tab" onclick="switchTab('drink')">🥤 ភេសជ្ជៈ</button>
+      <button class="tab" onclick="switchTab('extra')">🍳 Extras</button>
+    </div>
+    <div class="mcat active" id="cat-rice"></div>
+    <div class="mcat" id="cat-noodle"></div>
+    <div class="mcat" id="cat-drink"></div>
+    <div class="mcat" id="cat-extra"></div>
+  </div>
+</section>
+
+<section id="about" class="sec about-sec">
+  <div class="sec-in">
+    <div class="sec-lbl">Who We Are</div>
+    <h2 class="sec-title">A Family Kitchen for Pursat</h2>
+    <p class="sec-sub">We wake up before sunrise so your breakfast is ready before school or work.</p>
+    <div class="agrid">
+      <div class="acard"><div class="ai">👨‍👩‍👧‍👦</div><h4>Family-Run</h4><p>Every bowl is cooked and served by our own family — a warm home kitchen for the whole Pursat community.</p></div>
+      <div class="acard"><div class="ai">⏱️</div><h4>Pre-Order, No Wait</h4><p>Pick your arrival time when you order. Your food will be hot and ready exactly when you walk in — perfect for students between classes.</p></div>
+      <div class="acard"><div class="ai">💛</div><h4>Affordable for All</h4><p>Prices from 3,000 ៛ to 5,000 ៛ — so every student, worker, and neighbour in Pursat can enjoy a real Khmer breakfast.</p></div>
+    </div>
+  </div>
+</section>
+
+<div id="contact" class="contact">
+  <div class="cont-in">
+    <div class="cont-info">
+      <h3>Come find us 🍚</h3>
+      <p>Open daily · 6:00 AM – 12:00 PM · Pursat City</p>
+    </div>
+    <div class="ccards">
+      <div class="cc"><strong>Telegram / Phone</strong><span>+855 XX XXX XXXX</span></div>
+      <div class="cc"><strong>Hours</strong><span>6:00 AM – 12:00 PM</span></div>
+      <div class="cc"><strong>Location</strong><span>Pursat City, Cambodia</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ITEM DRAWER -->
+<div class="ov" id="dov" onclick="closeDOuter(event)">
+  <div class="drawer">
+    <div class="handle"></div>
+    <div class="dkm" id="dkm"></div>
+    <h3 id="dname">Item</h3>
+    <div class="dpr" id="dpr">0 ៛</div>
+    <div class="cg" id="cgspice"><label>Spice Level</label><div class="pills" id="spicepills"></div></div>
+    <div class="cg" id="cgadd"><label>Add-ons</label><div class="pills" id="addpills"></div></div>
+    <div style="margin-bottom:1.3rem">
+      <label style="font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);display:block;margin-bottom:.5rem">Quantity</label>
+      <div class="qty-row">
+        <button onclick="dq(-1)">−</button>
+        <span class="qnum" id="dqn">1</span>
+        <button onclick="dq(1)">+</button>
+      </div>
+    </div>
+    <button class="dadd" onclick="addToCart()">Add to Order — <span id="dtot">0 ៛</span></button>
+  </div>
+</div>
+
+<!-- CART -->
+<div class="cpanel" id="cpanel">
+  <div class="chead"><h3>🍚 Your Order</h3><button class="xbtn" onclick="closeCart()">×</button></div>
+  <div class="cbody" id="cbody"></div>
+  <div class="cfoot">
+    <div class="ctotals" id="ctotals"></div>
+    <button class="ckbtn" id="ckbtn" onclick="openCheckout()">Continue to Order Details →</button>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="mdo" id="mdo" onclick="closeMOuter(event)">
+  <div class="md" id="md">
+    <div class="mdtop">
+      <div><h2>🍚 Complete Your Order</h2><p id="steplbl">Step 1 of 3</p></div>
+      <div style="display:flex;align-items:center;gap:.7rem">
+        <div class="spills">
+          <div class="sp active" id="pill1"><div class="spn">1</div><span>Details</span></div>
+          <span class="spsep">›</span>
+          <div class="sp" id="pill2"><div class="spn">2</div><span>Payment</span></div>
+          <span class="spsep">›</span>
+          <div class="sp" id="pill3"><div class="spn">3</div><span>Review</span></div>
+        </div>
+        <button class="xbtn" onclick="closeCheckout()">×</button>
+      </div>
+    </div>
+
+    <!-- SUCCESS -->
+    <div class="ss" id="ss"></div>
+
+    <!-- FLOW -->
+    <div class="mdbody" id="flow">
+      <div class="mdside" id="mdside">
+        <div class="sdtitle">🛍 Your Order</div>
+        <div class="sditems" id="sditems"></div>
+        <hr class="sddiv">
+        <div id="sdtotals"></div>
+      </div>
+      <div class="mdmain">
+
+        <!-- STEP 1 -->
+        <div class="spanel active" id="step1">
+          <div class="fc">
+            <div class="fct">👤 Your Details</div>
+            <div style="display:flex;flex-direction:column;gap:.7rem">
+              <div class="fgrid">
+                <div class="fg" id="fg-name"><label>Your Name</label><input type="text" id="f-name" placeholder="e.g. Sophea"><span class="errt">Required</span></div>
+                <div class="fg" id="fg-phone"><label>Phone / Telegram</label><input type="tel" id="f-phone" placeholder="+855 XX XXX XXXX"><span class="errt">Required</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fc">
+            <div class="fct">🏪 Dine In or Pick Up?</div>
+            <div class="pkcards">
+              <div class="pkcard" onclick="selPickup('dinein',this)">
+                <div class="pki"><img src="images/dining.png" alt="Cash" class="pay-icon"></div><h4>Dine In</h4><p>Sit and eat at our shop</p>
+                <span class="badge">We bring it to your table</span>
+              </div>
+              <div class="pkcard" onclick="selPickup('pickup',this)">
+                <div class="pki"><img src="images/takeaway.png" alt="Cash" class="pay-icon"></div><h4>Pick Up</h4><p>Grab & go — packed in a bag</p>
+                <span class="badge">Ready at the counter</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="fc">
+            <div class="fct">⏰ What time will you arrive?</div>
+            <div class="tnote">📌 We cook your order fresh and have it ready <strong>exactly at your arrival time</strong>. Choose a time at least 10 minutes from now. Perfect for students ordering before heading to school!</div>
+            <div class="tgrid" id="tgrid"></div>
+          </div>
+
+          <div class="fc">
+            <div class="fct">📝 Special Notes (optional)</div>
+            <div class="fg"><label>Any requests?</label><input type="text" id="f-notes" placeholder="Less spicy, extra sauce, no MSG, pack separately…"></div>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="spanel" id="step2">
+          <div class="fc">
+            <div class="fct">💳 How will you pay?</div>
+            <div class="paycards">
+              <div class="paycard sel" id="pc-cash" onclick="selPay('cash',this)">
+                <img src="images/cash.png" alt="Cash" class="pay-icon">
+                <h5>Cash</h5>
+                <p>Pay when you arrive</p>
+              </div>
+              <div class="paycard" id="pc-qr" onclick="selPay('qr',this)">
+                <div class="pico"><img src="images/bank.png" alt="Cash" class="pay-icon"></div><h5>ABA / KHQR</h5><p>Scan & pay now</p>
+              </div>
+            </div>
+            <div id="cashmsg" style="margin-top:.9rem;padding:.9rem;background:var(--warm);border-radius:10px;text-align:center;color:var(--muted);font-size:.82rem;font-weight:600;border:1.5px dashed var(--foam)">
+               Bring your cash when you arrive. Exact change appreciated!
+            </div>
+            <div class="qrwrap" id="qrwrap">
+              <div style="font-size:.68rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:var(--saffron);margin-bottom:.65rem">Scan with ABA Mobile App</div>
+              <div class="qrbox"><canvas id="qrc" width="148" height="148"></canvas></div>
+              <div class="qramt" id="qramt">0 ៛</div>
+              <div class="qrhint">Amount already set — open ABA, tap Scan, confirm payment</div>
+              <div class="qrsteps">
+                <div class="qrstep"><div class="qsn">1</div>Open <strong>ABA Mobile</strong> app on your phone</div>
+                <div class="qrstep"><div class="qsn">2</div>Tap <strong>Pay</strong> → <strong>Scan QR</strong></div>
+                <div class="qrstep"><div class="qsn">3</div>Amount is pre-set to <strong id="qramt2" style="color:var(--deep)">0 ៛</strong> — just confirm</div>
+                <div class="qrstep"><div class="qsn">4</div><span>Screenshot this page as your <strong>payment proof</strong></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="spanel" id="step3">
+          <div class="fc"><div class="fct">🍚 Items</div><div id="rv-items"></div></div>
+          <div class="fc"><div class="fct">📋 Order Details</div><div id="rv-details"></div></div>
+          <div class="fc" style="background:var(--deep);border-color:transparent"><div class="fct" style="color:var(--gold)">💰 Total</div><div id="rv-totals"></div></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mdfoot" id="mdfoot">
+      <button class="btnback" id="btnback" onclick="stepBack()">← Back</button>
+      <div style="font-size:.78rem;color:var(--muted);opacity:.65" id="foottot"></div>
+      <button class="btnnext" id="btnnext" onclick="stepNext()">
+        <span id="btnlbl">Continue →</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
